@@ -2,14 +2,14 @@ import React, { useState } from 'react'
 import axios from 'axios';
 import { useQuery } from 'react-query';
 import Article from '../components/Article';
-import { useNews } from '../hooks/useNews';
+import { useImages }from '../hooks/useImages';
 import PageButtons from '../components/PageButtons';
 import LoadingSpinner from '../components/LoadingSpinner';
 
 
 export default function Homepage() {
     const [page, setPage] = useState(1);
-    const { data, isLoading } = useNews(page);
+    const { data, isLoading } = useImages(page);
     // console.log(data)
     if (isLoading) return <LoadingSpinner />
 

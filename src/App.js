@@ -1,7 +1,7 @@
 import './App.css';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import Homepage from './pages/Homepage';
-import Agency from './pages/Agency';
+import Photographer from './pages/Photographer';
 import Navbar from './components/Navbar';
 import { Route, Routes } from 'react-router-dom';
 import { Fragment } from 'react';
@@ -16,7 +16,7 @@ function App() {
       <Routes>
         <Fragment>
           <Route exact path="/newsportal/" element={<Homepage />} />
-          <Route exact path="/newsportal/agency/:name" element={<Agency />} />
+          <Route exact path="/newsportal/agency/:name" element={<Photographer />} />
         </Fragment>
       </Routes>
     </QueryClientProvider>
