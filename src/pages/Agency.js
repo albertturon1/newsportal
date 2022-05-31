@@ -7,6 +7,7 @@ import LoadingSpinner from '../components/LoadingSpinner';
 export default function Agency() {
     let { name } = useParams();
     const { data, isLoading } = useAgencyNews(name);
+    // console.log(data)
 
     if (isLoading) return <LoadingSpinner />
 
