@@ -6,7 +6,6 @@ import Navbar from './components/Navbar';
 import { Route, Routes } from 'react-router-dom';
 import { Fragment } from 'react';
 
-
 const queryClient = new QueryClient()
 
 function App() {

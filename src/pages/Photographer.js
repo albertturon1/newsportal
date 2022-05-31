@@ -7,7 +7,7 @@ import LoadingSpinner from '../components/LoadingSpinner';
 export default function Agency() {
     let { id } = useParams();
     const { data, isLoading } = usePhotographerImages(id);
-
+    console.log('data', data)
     if (isLoading) return <LoadingSpinner />
 
     return (

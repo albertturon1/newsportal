@@ -1,7 +1,7 @@
 import React from 'react'
 import { format, setGlobalDateI18n } from 'fecha';
 
-export default function Article({ data }) {
+export default function Photo({ data }) {
     const { alt, photographer, photographer_id, src: { landscape: image}, url } = data;
 
     return (
@@ -14,7 +14,7 @@ export default function Article({ data }) {
                     </div>
                 </div>
             </a>
-            <a  href={`/newsportal/agency/${photographer_id}`} className="text-md mt-4 text-blue-700">{photographer}</a>
+            <a  href={`/newsportal/photographer/${photographer_id}`} className="text-md mt-4 text-blue-700">{photographer}</a>
         </div>
     )
 }
