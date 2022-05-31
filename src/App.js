@@ -15,8 +15,8 @@ function App() {
       <Navbar />
       <Routes>
         <Fragment>
-          <Route exact path="/" element={<Homepage />} />
-          <Route exact path="/agency/:name" element={<Agency />} />
+          <Route exact path="/newsportal/" element={<Homepage />} />
+          <Route exact path="/newsportal/agency/:name" element={<Agency />} />
         </Fragment>
       </Routes>
     </QueryClientProvider>

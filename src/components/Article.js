@@ -16,7 +16,7 @@ export default function Article({ data }) {
                 </div>
             </a>
             <h1 className="mt-1 text-lg  font-bold">{author}</h1>
-            <a  href={`/agency/${name}`} className="text-sm text-blue-700">{name}</a>
+            <a  href={`/newsportal/agency/${name}`} className="text-sm text-blue-700">{name}</a>
             <h1 className="text-sm">{publicationData}</h1>
         </div>
     )
