@@ -1,0 +1,13 @@
+
+.shadow {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+  }
+  
+  .shadow::before {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, #fff, #000);
+  }
