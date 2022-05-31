@@ -5,8 +5,8 @@ import { useParams } from 'react-router-dom';
 import LoadingSpinner from '../components/LoadingSpinner';
 
 export default function Agency() {
-    let { name } = useParams();
-    const { data, isLoading } = usePhotographerImages(name);
+    let { id } = useParams();
+    const { data, isLoading } = usePhotographerImages(id);
 
     if (isLoading) return <LoadingSpinner />
 

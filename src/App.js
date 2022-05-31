@@ -16,7 +16,7 @@ function App() {
       <Routes>
         <Fragment>
           <Route exact path="/newsportal/" element={<Homepage />} />
-          <Route exact path="/newsportal/agency/:name" element={<Photographer />} />
+          <Route exact path="/newsportal/photographer/:id" element={<Photographer />} />
         </Fragment>
       </Routes>
     </QueryClientProvider>
